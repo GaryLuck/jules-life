@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Magic Shapes Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <h1>✨ Magic Shapes! ✨</h1>
+        </header>
+
+        <main>
+            <div id="grid-container">
+                <!-- Grid will be generated here -->
+            </div>
+        </main>
+
+        <section class="controls" id="playback-controls">
+            <button id="btn-play" class="control-btn" style="background-color: #4CAF50;">▶️ Play</button>
+            <button id="btn-pause" class="control-btn hidden" style="background-color: #f44336;">⏸️ Pause</button>
+            <button id="btn-step" class="control-btn" style="background-color: #2196F3;">⏭️ Next</button>
+            <button id="btn-clear" class="control-btn" style="background-color: #9C27B0;">🗑️ Clear</button>
+            <button id="btn-speed" class="control-btn" style="background-color: #FF9800;">🐢 Slow</button>
+        </section>
+
+        <section class="controls" id="shapes-controls">
+            <div class="control-group">
+                <h3>Magic Shapes</h3>
+                <div class="button-row">
+                    <button class="shape-btn" data-shape="glider">✈️ Glider</button>
+                    <button class="shape-btn" data-shape="blinker">🚥 Blinker</button>
+                    <button class="shape-btn" data-shape="toad">🐸 Toad</button>
+                    <button class="shape-btn" data-shape="spaceship">🚀 Spaceship</button>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <h3>My Shapes</h3>
+                <div class="button-row">
+                    <div class="slot-container">
+                        <button class="load-btn" data-slot="1">📂 Slot 1</button>
+                        <button class="save-btn" data-slot="1">📸 Save</button>
+                    </div>
+                    <div class="slot-container">
+                        <button class="load-btn" data-slot="2">📂 Slot 2</button>
+                        <button class="save-btn" data-slot="2">📸 Save</button>
+                    </div>
+                    <div class="slot-container">
+                        <button class="load-btn" data-slot="3">📂 Slot 3</button>
+                        <button class="save-btn" data-slot="3">📸 Save</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
